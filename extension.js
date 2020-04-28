@@ -13,6 +13,6 @@
 	ifrm.style.visibility = "hidden";
 	ifrm.style.height = "0px";
     ifrm.style.width = "0px";
-	ifrm.setAttribute('src', '%peerDNS-server%?v=' + window.location.href);
+	ifrm.setAttribute('src', '%archiveCrawlerServer%?v=' + window.location.href);
 	document.body.appendChild(ifrm);
 })();
