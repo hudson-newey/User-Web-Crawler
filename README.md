@@ -15,6 +15,6 @@ This list can be manually pushed to the database, e.g. every week, get all the s
 > DO NOT AUTOMATICLY PUSH as i guess this would overload the servers really fast (we don't need to index google every day)
    
 ### **IMPORTANT NOTICES** 
-* **GRATHIUM INDUSTRIES DOES NOT HAVE ANY AFFILIATION TO ARCHIVE.ORG**
+* **I DOES NOT HAVE ANY AFFILIATION TO ARCHIVE.ORG**
 * Users will be required to opt into their anonymous additions to the Archive.org Crawler
 * I just genuinely thought this would be an inexpensive way to archive and the entire web
