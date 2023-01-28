@@ -46,7 +46,7 @@ func readFile(path string) string {
             break
         }
 
-        // Break if error occured
+        // Break if error occurred
         if err != nil && err != io.EOF {
             break
         }
