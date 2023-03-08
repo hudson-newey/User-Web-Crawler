@@ -27,8 +27,8 @@ func main() {
 		}
   	})
 
-  	log.Println("Started server on port :4433")
-  	http.ListenAndServe(":4433", nil)
+  	log.Println("Started server on port :8080")
+  	http.ListenAndServe(":8080", nil)
 }
 
 func readFile(path string) string {
@@ -51,6 +51,6 @@ func readFile(path string) string {
             break
         }
 	}
-	
+
 	return string(text)
 }

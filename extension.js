@@ -1,7 +1,7 @@
 // ==UserScript==
-// @name         Archive.org Crawler
+// @name         User Web Crawler
 // @version      1.0
-// @description  When the you visits a webpage you are anonymously adding to a Archived Internet
+// @description  Index the web through your browsing activities
 // @include      *://*
 // @noframes
 // ==/UserScript==
@@ -9,10 +9,11 @@
 (function() {
     'use strict';
     let captureContainer = document.createElement('iframe');
-	captureContainer.setAttribute('id', 'archiveCrawler'); // assign an id
+	captureContainer.setAttribute('id', 'userWebCrawler'); // assign an id
 	captureContainer.style.visibility = "hidden";
 	captureContainer.style.height = "0px";
     captureContainer.style.width = "0px";
-	captureContainer.setAttribute('src', '%ArchiveCrawlerServer%?v=' + window.location.href);
+	// you will need to change the port number or endpoint here, depending on the configuration of your local commit server
+	captureContainer.setAttribute('src', 'http://localhost:8080?v=' + window.location.href);
 	document.body.appendChild(captureContainer);
 })();

@@ -1,10 +1,15 @@
 import webbrowser as wb
 import os
 
+# an example api endpoint is the archive.org save endpoint
+API_ENDPOINT = "https://web.archive.org/save/"
+
 # appending pages to archive.org involves iterating through the detected websites and going to the endpoint
 for i in range(open('pending.log', 'r').read().count("$")):
 	with open('pending.log', 'r') as fp:
-		wb.open_new_tab("https://web.archive.org/save/"+(fp.readlines()[i]).replace('$',''))
+		# TODO: replace this with a web request
+		webpage = (fp.readlines()[i]).replace('$','')
+		wb.open_new_tab(API_ENDPOINT + webpage)
 
 # create and delete old file
 # by default, google is appended to the detected sites files
